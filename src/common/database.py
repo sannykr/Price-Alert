@@ -1,11 +1,12 @@
-import pymongo
 import os
+
+import pymongo
+
 __author__ = 'sanny'
 
 
 class Database(object):
     URI = os.environ.get("MONGOLAB_URI")
-    #URI = "mongodb://127.0.0.1:27018"
     DATABASE = None
 
     @staticmethod
