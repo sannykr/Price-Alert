@@ -6,7 +6,7 @@ __author__ = 'sanny'
 
 
 class Database(object):
-    URI = os.getenv("MONGOLAB_URI")
+    URI = os.environ.get("MONGOLAB_URI")
     DATABASE = None
 
     @staticmethod
