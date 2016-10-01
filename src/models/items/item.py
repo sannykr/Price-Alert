@@ -13,7 +13,6 @@ class Item(object):
     def __init__(self, name, url, price=None, _id=None):
         self.name = name
         self.url = url
-        print("haha")
         store = Store.find_by_url(url)
         self.tag_name = store.tag_name
         self.query = store.query
